@@ -1,0 +1,76 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' https://f5b.de data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; frame-ancestors 'none'"
+
+[[redirects]]
+  from = "/information.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/equipment"
+  to = "/equipment.html"
+  status = 301
+
+[[redirects]]
+  from = "/uk-league.html"
+  to = "/league.html"
+  status = 301
+
+[[redirects]]
+  from = "/2021-uk-league.html"
+  to = "/league.html"
+  status = 301
+
+[[redirects]]
+  from = "/2022-uk-league.html"
+  to = "/league.html"
+  status = 301
+
+[[redirects]]
+  from = "/calendar.html"
+  to = "/league.html"
+  status = 301
+
+[[redirects]]
+  from = "/competitions.html"
+  to = "/rules.html"
+  status = 301
+
+[[redirects]]
+  from = "/batteries.html"
+  to = "/equipment.html#batteries"
+  status = 301
+
+[[redirects]]
+  from = "/data-logging.html"
+  to = "/equipment.html#data-logging"
+  status = 301
+
+[[redirects]]
+  from = "/planes.html"
+  to = "/equipment.html#planes"
+  status = 301
+
+[[redirects]]
+  from = "/unilog-in-english.html"
+  to = "/equipment.html#unilog"
+  status = 301
+
+[[redirects]]
+  from = "/have-a-go.html"
+  to = "/#have-a-go"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/#contact"
+  status = 301
