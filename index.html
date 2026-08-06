@@ -19,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -55,6 +55,7 @@
           <li><a href="index.html#gallery">Gallery</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
+        <a class="btn btn--primary nav-cta" href="#have-a-go">Have a Go</a>
         <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -66,12 +67,10 @@
 
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-shape hero-shape--1"></div>
-      <div class="hero-shape hero-shape--2"></div>
-      <div class="container">
-        <div class="hero-grid">
+      <div class="hero-grid">
+        <div class="hero-content-col">
           <div class="hero-content">
-            <span class="hero-badge"><span class="dot"></span> Working with the BMFA &amp; FAI</span>
+            <span class="eyebrow">UK F5B — Hotliners</span>
             <h1>Competitive electric glider racing, flown fast.</h1>
             <p>F5B UK is home to the UK's F5B community — high-performance electric glider racing combining distance, duration and landing in a single flight. Newcomers always welcome.</p>
             <div class="btn-row">
@@ -81,26 +80,25 @@
               </a>
               <a class="btn btn--outline" href="#contact">Get in Touch</a>
             </div>
+            <a href="#about" class="scroll-cue">
+              Scroll to explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
           </div>
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-visual-card">
-              <div class="hero-visual-rings"></div>
-              <img class="hero-banner-img" src="images/f5b-uk-banner.png" alt="">
-              <div class="hero-float-badge hero-float-badge--1">150m<span>Course length</span></div>
-              <div class="hero-float-badge hero-float-badge--2">£10<span>Have-a-Go entry</span></div>
-            </div>
+        </div>
+        <div class="hero-photo-col">
+          <img src="images/hero-warboys.jpg" alt="Dynamic electric glider being flown at the Warboys F5B event" width="1100" height="733">
+          <div class="hero-photo-badge">
+            <img src="images/f5b-uk-banner.png" alt="">
+            Working with the BMFA &amp; FAI
           </div>
         </div>
       </div>
-      <a href="#about" class="scroll-cue">
-        Scroll
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-      </a>
     </section>
 
     <!-- Stats -->
-    <div class="container stats-strip reveal">
-      <div class="stats-card">
+    <div class="stats-strip reveal">
+      <div class="container stats-row">
         <div class="stat">
           <span class="stat-number">3</span>
           <span class="stat-label">Tasks per flight</span>
@@ -125,6 +123,7 @@
       <div class="container">
         <div class="split">
           <div class="reveal">
+            <span class="section-number">01</span>
             <span class="eyebrow">About F5B</span>
             <h2>What is F5B?</h2>
             <p>F5B is a multitask FAI competition class for radio-controlled electric gliders (often called "hotliners"). Three tasks — Distance, Duration and Landing — are completed in a single flight, rewarding both raw speed and precise flying.</p>
@@ -146,6 +145,7 @@
     <section id="have-a-go" class="section section--alt">
       <div class="container">
         <div class="section-intro reveal">
+          <span class="section-number">02</span>
           <span class="eyebrow">New to F5B</span>
           <h2>Have a Go Events</h2>
           <p>Trial flights on our 150m course, in a fun and friendly atmosphere — any BMFA member with any electric glider is welcome. £10 entry, no scores recorded, just bragging rights over your clubmates.</p>
@@ -172,6 +172,7 @@
     <section id="equipment" class="section">
       <div class="container">
         <div class="section-intro reveal">
+          <span class="section-number">03</span>
           <span class="eyebrow">Getting Started</span>
           <h2>Kit &amp; Equipment</h2>
           <p>You don't need expensive kit to have a go — here's what actually matters as you get into F5B.</p>
@@ -209,6 +210,7 @@
     <section class="section section--alt">
       <div class="container">
         <div class="section-intro reveal">
+          <span class="section-number">04</span>
           <span class="eyebrow">The Format</span>
           <h2>How F5B Works</h2>
           <p>One flight, three tasks. Here's the short version — full FAI rules and equipment limits are on the rules page.</p>
@@ -240,7 +242,7 @@
           </div>
         </div>
         <div class="btn-row mt-lg center">
-          <a class="btn btn--secondary" href="rules.html">Read the full FAI rules</a>
+          <a class="btn btn--outline" href="rules.html">Read the full FAI rules</a>
         </div>
       </div>
     </section>
@@ -250,6 +252,7 @@
       <div class="container">
         <div class="split">
           <div class="reveal">
+            <span class="section-number">05</span>
             <span class="eyebrow">Competition</span>
             <h2>UK League</h2>
             <p>The UK F5B League runs a series of events across the season, with a Beginners / Intermediate / Open F5B class structure so newcomers and experienced pilots alike have somewhere to compete. League placings are typically calculated from your best results across the season (e.g. best 4 from 6 events).</p>
@@ -257,7 +260,7 @@
               This season's fixtures and standings are being finalised. Visit the League page for the latest, or get in touch to be notified when dates are confirmed.
             </div>
             <div class="btn-row mt-md">
-              <a class="btn btn--secondary" href="league.html">
+              <a class="btn btn--outline" href="league.html">
                 View League page
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
@@ -274,6 +277,7 @@
     <section id="gallery" class="section section--alt">
       <div class="container">
         <div class="section-intro reveal">
+          <span class="section-number">06</span>
           <span class="eyebrow">Gallery</span>
           <h2>On the Course</h2>
         </div>
@@ -310,6 +314,7 @@
     <section id="contact" class="section">
       <div class="container">
         <div class="section-intro reveal">
+          <span class="section-number">07</span>
           <span class="eyebrow">Get in Touch</span>
           <h2>Say Hello</h2>
           <p>Curious about F5B, want to come Have a Go, or just have a question? Drop us a line — we're a friendly bunch.</p>
